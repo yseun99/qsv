@@ -21,14 +21,14 @@ Sphere Analytics 웹 SDK 연동 가이드입니다.
     ```html
     <script>
         var _sphereJsUrl = "https://[서비스-도메인]/sphere.min.js";    
-        !function(e,t,r,s,n){e.SphereAnalytics=e.SphereAnalytics||{_q:[]};for(var i=0;i<s.length;i++)n(e.SphereAnalytics,s[i]);o=t.createElement("script");o.async=!0,o.src=r;a=t.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)}(window,document,_sphereJsUrl,["init","setUserId","setGrade","setGender","setBirthYear","setPhone","setEmail","setRemainingPoint","setTotalEarnedPoint","setTotalUsedPoint","setUserProperty","logEvent","requestUpload","setLogLevel"],function(e,t){e[t]=function(){return e._q.push([t,arguments]),e}});
+        !function(e,t,r,s,n){e.SphereAnalytics=e.SphereAnalytics||{_q:[]};for(var i=0;i<s.length;i++)n(e.SphereAnalytics,s[i]);o=t.createElement("script");o.async=!0,o.src=r;a=t.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)}(window,document,_sphereJsUrl,["init","setUserId","setGrade","setGender","setBirthYear","setPhoneNumber","setEmail","setRemainingPoint","setTotalEarnedPoint","setTotalUsedPoint","setUserProperty","logEvent","requestUpload","setLogLevel"],function(e,t){e[t]=function(){return e._q.push([t,arguments]),e}});
     </script>
     ```
     또는
     ```html
     <script src="https://[서비스-도메인]/sphere.min.js" async></script>
     <script>
-        !function(e,t,n,s){e.SphereAnalytics=e.SphereAnalytics||{_q:[]};for(var r=0;r<n.length;r++)s(e.SphereAnalytics,n[r])}(window,document,["init","setUserId","setGrade","setGender","setBirthYear","setPhone","setEmail","setRemainingPoint","setTotalEarnedPoint","setTotalUsedPoint","setUserProperty","logEvent","requestUpload","setLogLevel"],function(e,t){e[t]=function(){return e._q.push([t,arguments]),e}});
+        !function(e,t,n,s){e.SphereAnalytics=e.SphereAnalytics||{_q:[]};for(var r=0;r<n.length;r++)s(e.SphereAnalytics,n[r])}(window,document,["init","setUserId","setGrade","setGender","setBirthYear","setPhoneNumber","setEmail","setRemainingPoint","setTotalEarnedPoint","setTotalUsedPoint","setUserProperty","logEvent","requestUpload","setLogLevel"],function(e,t){e[t]=function(){return e._q.push([t,arguments]),e}});
     </script>
     ```
 * **3 단계**: **1 단계**에서 생성한 다운로드 URL을 위 **2 단계**의 `_sphereUrl` 변수 또는 `<script src>`속성값으로 할당해 주십시오.
